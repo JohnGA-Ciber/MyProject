@@ -3,21 +3,22 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
-import { HomePage } from './home.page';
+import { AdminPerfilComponent } from './admin-perfil.component';
+import { MaterialModule } from 'src/app/share/material.module';
 
 @NgModule({
   imports: [
+    MaterialModule,
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: AdminPerfilComponent
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [AdminPerfilComponent]
 })
-export class HomePageModule {}
+export class AdminPerfilModule {}
